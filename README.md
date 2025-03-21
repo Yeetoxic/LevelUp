@@ -1,4 +1,4 @@
-# **Habit Breaker App**
+# **LevelUp App**
 
 ## **Idea**
 The **Habit Breaker App** is designed to help users track and overcome their bad habits through a simple yet effective tracking system. Users log their progress by recording each instance of resisting or giving in to a bad habit. Over time, they can visualize their progress, build streaks, and gain motivation through XP rewards. The app also lightly supports good habit-building but keeps its focus on stopping negative behaviors.
