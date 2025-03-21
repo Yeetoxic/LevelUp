@@ -1,7 +1,7 @@
-# **LevelUp App**
+# **LevelUp app**
 
 ## **Idea**
-The **Habit Breaker App** is designed to help users track and overcome their bad habits through a simple yet effective tracking system. Users log their progress by recording each instance of resisting or giving in to a bad habit. Over time, they can visualize their progress, build streaks, and gain motivation through XP rewards. The app also lightly supports good habit-building but keeps its focus on stopping negative behaviors.
+The **LevelUp app** is designed to help users track and overcome their bad habits through a simple yet effective tracking system. Users log their progress by recording each instance of resisting or giving in to a bad habit. Over time, they can visualize their progress, build streaks, and gain motivation through XP rewards. The app also lightly supports good habit-building but keeps its focus on stopping negative behaviors.
 
 ### **How it Works**
 - Users create and track bad habits (e.g., smoking, junk food, procrastination).
@@ -46,5 +46,5 @@ Mock-ups will be created using **Android Studio XML layouts** and **Figma (if ne
 
 ---
 ## **Conclusion**
-The **Habit Breaker App** aims to provide a straightforward way to track and overcome bad habits while lightly encouraging good ones. By using a **simple XP system, streak tracking, and minimal UI**, the app will be easy to use while still being effective. The focus on solo use ensures that development stays manageable within the semester timeframe.
+The **LevelUp app** aims to provide a straightforward way to track and overcome bad habits while lightly encouraging good ones. By using a **simple XP system, streak tracking, and minimal UI**, the app will be easy to use while still being effective. The focus on solo use ensures that development stays manageable within the semester timeframe.
 
