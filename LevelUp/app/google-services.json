@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "562416526292",
+    "project_id": "levelup-82eb6",
+    "storage_bucket": "levelup-82eb6.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:562416526292:android:46738664f7a8ec4fe76c41",
+        "android_client_info": {
+          "package_name": "edu.itas.danilvilmont.levelup"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB61VQgVzLM_jhvRiLfBzaCqxynrLWt00M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
