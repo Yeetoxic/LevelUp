@@ -1,26 +1,72 @@
-# **LevelUp app**
+# **LevelUp – Gamified Habit Breaker**
 
-## **Idea**
-The **LevelUp app** is designed to help users track and overcome their bad habits through a simple yet effective tracking system. Users log their progress by recording each instance of resisting or giving in to a bad habit. Over time, they can visualize their progress, build streaks, and gain motivation through XP rewards. The app also lightly supports good habit-building but keeps its focus on stopping negative behaviors.
-
-### **How it Works**
-- Users create and track bad habits (e.g., smoking, junk food, procrastination).
-- They log every time they **resist** a habit ("Win") or **give in** ("Slip").
-- The app tracks **streaks** (days without a slip) and provides XP rewards for wins.
-- Simple **progress charts** help users visualize improvement.
-- A daily notification reminds users to check in and log their progress.
-- A minimalistic **good habit section** allows users to track one or two positive habits alongside breaking bad ones.
-
-The goal is to keep the app **lightweight and easy to use**, avoiding complex gamification elements while still providing motivation to improve.
+## **Overview**
+**LevelUp** is a lightweight Android app designed to help users **break bad habits** while lightly encouraging good ones. Through a simple **XP and streak tracking system**, users stay motivated without being overwhelmed by features. Every time a user **resists** a bad habit ("Win") or **gives in** ("Slip"), they can log it with one tap — building long-term awareness and change.
 
 ---
-## **Phone Features & Technologies Used**
-- **Local Storage:** Uses Room Database for offline tracking.
-- **Networking:** Firebase Firestore to sync progress across devices (optional).
-- **Push Notifications:** Firebase Cloud Messaging for daily habit reminders.
-- **Simple UI:** Designed with Material UI principles in Android Studio.
+
+## Core Features
+
+- ✅ **Create habits** to track things like junk food, procrastination, or smoking.
+- 🟢 Tap **Win** when you resist temptation — earn XP and build streaks.
+- 🔴 Tap **Slip** when you give in — lose XP and reset streaks.
+- 🧠 Each habit earns levels and shows progress with a **clean progress bar**.
+- 🔁 **Daily notification reminders** to stay consistent.
+- ☁️ **Cloud sync with Firebase Firestore** for multi-device support.
+- 🧹 **Deleted habit recovery** dialog from cloud on reinstall or reset.
+- ♿ **Material Design 3 UI**, including **dark mode compatibility** and **accessible touch targets**.
 
 ---
+
+## 📱 Technologies Used
+
+| Layer             | Tech Used                       |
+|------------------|----------------------------------|
+| UI               | Material 3 + Android XML         |
+| Local Storage    | Room Database                    |
+| Cloud Sync       | Firebase Firestore               |
+| Notifications    | AlarmManager + BroadcastReceiver |
+| Offline Support  | Room-first data architecture     |
+| Language         | Java (Android Studio)            |
+
+---
+
+## 📊 Screens / Windows
+
+- **Main Screen** – list of habits with Win, Slip, and Delete buttons
+- **Stats Page** – total XP, longest streak, and habit count
+- **Recovery Dialog** – restore lost habits from Firebase after reinstall
+- **Minimal layout** – modern MaterialCardViews & buttons
+
+---
+
+## 🔄 Firebase Sync
+
+- Syncs habits to the cloud immediately after any change
+- Deletions are marked instead of removed (`deleted = true`)
+- Habits missing from local but present in Firebase are offered for recovery
+- Users can **manually refresh** using a refresh button on the main screen
+
+---
+
+## 🚫 Error Handling
+
+- All Room and Firebase operations are wrapped with `try/catch` blocks
+- User-friendly toasts and logs provide feedback if an error occurs
+- Firebase writes fail gracefully without crashing the app
+- Network and offline scenarios are handled via local fallback
+
+---
+
+## Future Improvements
+
+- Optional **dark mode toggle**
+- Graphs for win/slip trends
+- Long-press gesture to rename habits
+- Separate tab for **positive habit-building**
+
+---
+
 ## **Documentation and Tutorials**
 Resources that will help with development:
 - **Room Database** for local habit tracking: [Android Documentation](https://developer.android.com/training/data-storage/room)
@@ -29,20 +75,13 @@ Resources that will help with development:
 - **Android UI Guidelines**: [Material Design Components](https://material.io/components)
 
 ---
-## **Mock-Up**
-A sample screen will include:
-- **Main Screen**: List of bad habits with quick "Win" and "Slip" buttons.
-- **Habit Details Page**: Shows streaks, XP progress, and log history.
-- **Progress Page**: Simple bar graph displaying Win % vs. Slip %.
 
-Mock-ups will be created using **Android Studio XML layouts** and **Figma (if needed).**
+## Known Limitations
 
----
-## **Potential Problems & Challenges**
-- **Time Constraints**: Due to limited semester time, features must be minimal and focused.
-- **Storing Data Efficiently**: Balancing Firebase vs. Room Database for tracking.
-- **Keeping UI Simple Yet Functional**: Designing a clean but engaging experience.
-- **Notifications & Reminders**: Ensuring they are useful without being annoying.
+- No user authentication (shared Firebase for all users)
+- Data is device-based unless synced
+- No dark mode toggle (relies on system theme)
+- No real-time syncing (manual refresh only)
 
 ---
 ## **Conclusion**
